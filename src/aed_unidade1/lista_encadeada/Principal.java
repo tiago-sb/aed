@@ -22,5 +22,13 @@ public class Principal {
 		lista.extrair("anna");
 		
 		System.out.println(lista.getTailValue());
+		
+		lista.inserirFim("paulo");
+		lista.inserirFim("lucio");
+		lista.inserirFim("andre");
+		lista.inserirFim("marcos paulo");
+		
+		// metodo estatico para imprimir os elementos presentes na lista
+		ListaEncadeada.imprimirLista(lista);
 	}
 }

@@ -43,7 +43,6 @@ public class ListaEncadeada {
         return tail.data;
     }
     
-    
     public boolean estaVazia(){
         return head == null; 
     }
@@ -103,6 +102,12 @@ public class ListaEncadeada {
     
         if (ptr == tail){ 
             tail = prevPtr; 
+        }
+    }
+    
+    public static void imprimirLista(ListaEncadeada elemento){
+    	for (Element ptr = elemento.head; ptr != null; ptr = ptr.next){
+            System.out.print("[" + ptr.getData() + "] ");
         }
     }
 }
