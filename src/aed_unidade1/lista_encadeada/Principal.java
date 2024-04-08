@@ -1,8 +1,15 @@
 package aed_unidade1.lista_encadeada;
 
+import aed_unidade1.lista_encadeada.lista_simples.ListaEncadeada;
+
+/**
+ * Classe para testes do pacote lista encadeada
+ * @author Tiago Santos Bela
+ * @since 08.04.2024
+ */
 public class Principal {
 	public static void main(String[] args) throws Exception {
-		ListaEncadeada lista = new ListaEncadeada();
+		ListaEncadeada<String> lista = new ListaEncadeada<String>();
 		
 		// adicionar tiago e anna na lista
 		lista.inserirInicio("tiago");
@@ -29,6 +36,6 @@ public class Principal {
 		lista.inserirFim("marcos paulo");
 		
 		// metodo estatico para imprimir os elementos presentes na lista
-		ListaEncadeada.imprimirLista(lista);
+		lista.imprimirLista();
 	}
 }
