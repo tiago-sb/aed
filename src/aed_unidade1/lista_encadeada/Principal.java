@@ -35,7 +35,12 @@ public class Principal {
 		lista.inserirFim("andre");
 		lista.inserirFim("marcos paulo");
 		
-		// metodo estatico para imprimir os elementos presentes na lista
+		// metodo para imprimir os elementos presentes na lista
+		lista.imprimirLista();
+		// extrair o nome andre da lista
+		lista.extrair("andre");
+		
+		// metodo para imprimir os elementos presentes na lista
 		lista.imprimirLista();
 	}
 }

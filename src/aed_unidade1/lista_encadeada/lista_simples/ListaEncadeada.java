@@ -115,13 +115,13 @@ public class ListaEncadeada<T> implements IListaSimples<T> {
         if (itemEscolhido == null){
             throw new Exception();
         }
-        if (itemEscolhido == this.head){
-            this.head = itemEscolhido.getNext();
-        }
-        if(itemEscolhido != this.head){
+        if(!itemEscolhido.equals(this.head)){
             anteriorItemEscolhido.setNext(itemEscolhido.getNext());
         }
-        if (itemEscolhido == this.tail){ 
+        if (itemEscolhido.equals(this.head)){
+            this.head = itemEscolhido.getNext();
+        }
+        if (itemEscolhido.equals(this.tail)){ 
             this.tail = anteriorItemEscolhido; 
         }
         
