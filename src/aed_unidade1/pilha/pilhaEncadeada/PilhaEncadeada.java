@@ -42,9 +42,11 @@ public class PilhaEncadeada<Tipo> implements IPilha<Tipo> {
 			throw new Exception();
 		}
 		
-		lista.extrair(lista.getHeadValue());
+		Tipo head = lista.getHeadValue();
+		lista.extrair(head);
 		this.numeroItens = this.numeroItens - 1;
-		return lista.getHeadValue();
+		
+		return head;
 	}
 
 	public void extrair(Tipo item) throws Exception {
