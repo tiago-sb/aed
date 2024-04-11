@@ -85,7 +85,7 @@ public class ListaEncadeada<T> implements IListaSimples<T> {
         } 
         
         if(this.head != null){
-            this.tail.setNext(novoItem);;
+            this.tail.setNext(novoItem);
         }
         
         this.numeroElementos = this.numeroElementos + 1;
