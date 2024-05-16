@@ -31,7 +31,7 @@ public class Principal {
 		// metodo para retirar uma String para a pilha encadeada		
 		String nomeTirado = pilhaNomes.pop();
 		// metodo para imprimir o numero de itens que se encontram na pilha
-		System.out.println(pilhaNomes.getTamanho());
+		System.out.println("nome retirado" + nomeTirado + "\n" + pilhaNomes.getTamanho());
 		// metodo para imprimir o item que se encontra no topo da pilha
 		System.out.println(pilhaNomes.getTop());
 	}
